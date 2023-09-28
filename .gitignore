@@ -4,6 +4,3 @@
 
 # MacOS
 .DS_Store
-
-# Helm package
-*.tgz
