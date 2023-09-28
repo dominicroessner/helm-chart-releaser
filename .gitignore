@@ -1,0 +1,9 @@
+# vscode
+.vscode/
+.devcontainer/
+
+# MacOS
+.DS_Store
+
+# Helm package
+*.tgz
