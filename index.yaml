@@ -11,4 +11,15 @@ entries:
     urls:
     - chart1-1.0.3.tgz
     version: 1.0.3
-generated: "2023-09-28T18:39:32.60387231Z"
+  chart2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-28T18:42:42.287301326Z"
+    description: A Helm chart for Kubernetes
+    digest: d73800b4b06b75052db423c1b8bf822774bc34f0b480b16b9068c1b0b0ad04a6
+    name: chart2
+    type: application
+    urls:
+    - chart2-1.0.4.tgz
+    version: 1.0.4
+generated: "2023-09-28T18:42:42.287311826Z"
