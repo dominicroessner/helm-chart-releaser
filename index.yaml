@@ -3,6 +3,16 @@ entries:
   chart1:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-09-28T19:43:14.058820225Z"
+    description: A Helm chart for Kubernetes
+    digest: 202b5cc96ee60527c0fa711e4a801e28a55799b1248c2bf8ac890fd15e12869c
+    name: chart1
+    type: application
+    urls:
+    - https://github.com/dominicroessner/helm-chart-releaser/releases/download/chart1-1.0.5/chart1-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-09-28T18:48:35.552833518Z"
     description: A Helm chart for Kubernetes
     digest: b559f8762890bed185f2a04cdd414a4a177e3b109dd3388d2c31f75b81ab0d26
@@ -24,6 +34,16 @@ entries:
   chart2:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-09-28T19:43:14.226803904Z"
+    description: A Helm chart for Kubernetes
+    digest: c1cc1d9a85f466aa3957c87f30bf3cdb83c347237b4901f509696b689d6a8623
+    name: chart2
+    type: application
+    urls:
+    - https://github.com/dominicroessner/helm-chart-releaser/releases/download/chart2-1.0.5/chart2-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-09-28T18:42:42.287301326Z"
     description: A Helm chart for Kubernetes
     digest: d73800b4b06b75052db423c1b8bf822774bc34f0b480b16b9068c1b0b0ad04a6
@@ -32,4 +52,4 @@ entries:
     urls:
     - chart2-1.0.4.tgz
     version: 1.0.4
-generated: "2023-09-28T18:48:35.552844918Z"
+generated: "2023-09-28T19:43:14.226879205Z"
