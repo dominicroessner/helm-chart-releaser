@@ -35,7 +35,7 @@ jobs:
         uses: helm/chart-releaser-action@main
         with:
           charts_dir: helm-charts
-          skip_existing: yes
+          skip_existing: no
         env:
           CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CR_GENERATE_RELEASE_NOTES: true
