@@ -40,7 +40,7 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 82
+  port: 84
 
 ingress:
   enabled: false
