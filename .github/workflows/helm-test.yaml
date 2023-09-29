@@ -11,7 +11,7 @@ jobs:
   lint-test:
     runs-on: ubuntu-latest
     env:
-      CT_CHART_DIRS: charts
+      CT_CHART_DIRS: helm-charts
       CT_CHECK_VERSION_INCREMENT: false
       CT_TARGET_BRANCH: ${{ github.event.repository.default_branch }}
       CT_VALIDATE_MAINTAINERS: false

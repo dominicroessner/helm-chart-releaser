@@ -7,10 +7,10 @@ repos:
       #   args: [--branch, main]
       - id: trailing-whitespace
 
-  # - repo: https://github.com/jumanjihouse/pre-commit-hooks
-  #   rev: 3.0.0
-  #   hooks:
-  #     - id: shellcheck
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 3.0.0
+    hooks:
+      - id: shfmt
 
   - repo: https://github.com/gruntwork-io/pre-commit
     rev: v0.1.22
