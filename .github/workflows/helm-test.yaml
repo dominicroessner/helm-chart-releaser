@@ -3,14 +3,13 @@ name: Lint and Test Charts
 on:
   pull_request:
     paths:
-      - "helm-charts/**"
+      - "charts/**"
       - ".github/workflows/helm-test.yaml"
 
 jobs:
   lint-test:
     runs-on: ubuntu-latest
     env:
-      CT_CHART_DIRS: helm-charts
       CT_CHECK_VERSION_INCREMENT: false
       CT_TARGET_BRANCH: ${{ github.event.repository.default_branch }}
       CT_VALIDATE_MAINTAINERS: false
