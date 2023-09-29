@@ -12,10 +12,11 @@ repos:
     hooks:
       - id: shfmt
 
-  - repo: https://github.com/gruntwork-io/pre-commit
-    rev: v0.1.22
-    hooks:
-      - id: helmlint
+  # TODO: resolve caveats before enabling: https://github.com/gruntwork-io/pre-commit?tab=readme-ov-file#helm-lint-caveats
+  # - repo: https://github.com/gruntwork-io/pre-commit
+  #   rev: v0.1.22
+  #   hooks:
+  #     - id: helmlint
 
   - repo: https://github.com/norwoodj/helm-docs
     rev: v1.11.2
