@@ -53,9 +53,13 @@ jobs:
       - name: Push charts to GHCR
         run: |
           shopt -s nullglob
+          owner_lc=${REPOSITORY_OWNER,,}
+          echo "owner_lc: ${owner_lc}"
           for pkg in .cr-release-packages/*; do
             if [ -z "${pkg:-}" ]; then
               break
             fi
             helm push "${pkg}" "oci://ghcr.io/${GITHUB_REPOSITORY_OWNER}/charts"
           done
+        env:
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
