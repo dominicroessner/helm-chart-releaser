@@ -3,9 +3,8 @@ name: Lint and Test Charts
 on:
   pull_request:
     paths:
-      - "charts/**"
+      - "helm-charts/**"
       - ".github/workflows/helm-test.yaml"
-      - ".github/workflows/helm-release.yaml"
 
 jobs:
   lint-test:
