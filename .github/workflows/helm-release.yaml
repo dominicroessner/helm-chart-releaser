@@ -56,7 +56,7 @@ jobs:
           registry: ghcr.io
           # username: ${{ github.actor }}
           # password: ${{ secrets.GITHUB_TOKEN }}
-          username: dominic-gitops[bot]
+          username: dominic-gitops
           password: ${{ steps.token.outputs.token }}
 
       - name: Push charts to GHCR
