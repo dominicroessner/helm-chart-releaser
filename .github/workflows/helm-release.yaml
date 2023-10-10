@@ -42,7 +42,6 @@ jobs:
       - name: Run chart-releaser
         # TODO: use 1.6.0 when released for this: https://github.com/helm/chart-releaser-action/issues/162
         # uses: helm/chart-releaser-action@v1.6.0
-        # uses: helm/chart-releaser-action@v1.5.0
         uses: helm/chart-releaser-action@ed43eb303604cbc0eeec8390544f7748dc6c790d
         with:
           skip_existing: true
@@ -55,8 +54,6 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          # username: ${{ github.actor }}
-          # password: ${{ secrets.GITHUB_TOKEN }}
           username: dominic-gitops
           password: ${{ steps.token.outputs.token }}
 
