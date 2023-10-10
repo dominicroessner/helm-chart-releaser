@@ -3,6 +3,16 @@ entries:
   chart1:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-10-10T21:46:09.954605627Z"
+    description: A Helm chart for chart1
+    digest: bae12b571eca6e08040beb73374c4cbb4fdc0077fd3ae8f5181a7d3c2eb7ee32
+    name: chart1
+    type: application
+    urls:
+    - chart1-2.0.2.tgz
+    version: 2.0.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-10-10T21:43:30.57318125Z"
     description: A Helm chart for chart1
     digest: fca9ca1dbf6ce240dc747dbb212ac8a4e0160d21ade84e4d1023a4c3e7b4af97
@@ -162,4 +172,4 @@ entries:
     urls:
     - chart2-1.0.4.tgz
     version: 1.0.4
-generated: "2023-10-10T21:43:30.57325265Z"
+generated: "2023-10-10T21:46:09.954711428Z"
