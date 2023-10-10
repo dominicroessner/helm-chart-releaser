@@ -33,6 +33,9 @@ jobs:
           read name id < <(echo $(curl -s 'https://api.github.com/users/tracerlabsbot%5Bbot%5D' |
               jq -r '.login, .id'))
 
+          echo $name
+          echo $id
+
           # name=$(curl -s https://api.github.com/users/tracerlabsbot%5Bbot%5D | jq -r '.login')
           # id=$(curl -s https://api.github.com/users/tracerlabsbot%5Bbot%5D | jq -r '.id')
           git config user.name $name
