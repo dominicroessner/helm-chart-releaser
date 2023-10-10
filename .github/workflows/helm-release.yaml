@@ -13,7 +13,6 @@ jobs:
     permissions:
       contents: write
       packages: write
-      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -54,8 +53,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: dominic-gitops[bot]
-          password: ${{ steps.token.outputs.token }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push charts to GHCR
         run: |
