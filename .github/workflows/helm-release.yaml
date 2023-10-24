@@ -50,6 +50,7 @@ jobs:
           CR_GENERATE_RELEASE_NOTES: true
           CR_OWNER: ${{ github.repository_owner }}
           CR_GIT_REPO: ${{ github.repository }}
+          CR_INDEX_PATH: .
 
       # see https://github.com/helm/chart-releaser/issues/183
       - name: Login to GitHub Container Registry
