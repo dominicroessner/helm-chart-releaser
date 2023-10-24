@@ -22,17 +22,17 @@ jobs:
           app-id: ${{ vars.GITOPS_APP_ID }}
           private-key: ${{ secrets.GITOPS_APP_PRIVATE_KEY }}
 
-      - name: Configure Git
-        run: |
-          # https://api.github.com/users/dominic-gitops%5Bbot%5D
-          git config user.name dominic-gitops[bot]
-          git config user.email 146885307+dominic-gitops[bot]@users.noreply.github.com
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ steps.token.outputs.token }}
+
+      - name: Configure Git
+        run: |
+          # https://api.github.com/users/dominic-gitops%5Bbot%5D
+          git config user.name dominic-gitops[bot]
+          git config user.email 146885307+dominic-gitops[bot]@users.noreply.github.com
 
       - name: Set up Helm
         uses: azure/setup-helm@v3.5
