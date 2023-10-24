@@ -33,7 +33,7 @@ jobs:
           # https://api.github.com/users/dominic-gitops%5Bbot%5D
           git config user.name dominic-gitops[bot]
           git config user.email 146885307+dominic-gitops[bot]@users.noreply.github.com
-          git config credential.https://github.com.username dominic-gitops
+          git config --global url."https://dominic-gitops:$${{ steps.token.outputs.token }}@github.com/".insteadOf "https://github.com/"
 
       - name: Set up Helm
         uses: azure/setup-helm@v3.5
