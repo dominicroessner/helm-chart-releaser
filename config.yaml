@@ -1,0 +1,3 @@
+nodes:
+# one node hosting a control plane
+- role: control-plane
