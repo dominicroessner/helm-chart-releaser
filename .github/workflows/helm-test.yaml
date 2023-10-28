@@ -41,8 +41,11 @@ jobs:
       - name: Run chart-testing (lint)
         run: ct lint
 
-    #   - name: Create kind cluster
-    #     uses: helm/kind-action@v1.8.0
+      - name: Create kind cluster
+        uses: helm/kind-action@v1.8.0
+
+      - name: K
+        run: kubectl get nodes
 
     #     # TODO: do what they did here and pass in --config
     #     # https://github.com/prometheus-community/helm-charts/actions/runs/6342491434/workflow#L48
