@@ -43,6 +43,8 @@ jobs:
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.8.0
+        with:
+          config: config.yaml
 
       - name: K
         run: kubectl get nodes
