@@ -3,6 +3,16 @@ entries:
   chart1:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-11-09T18:25:58.593183695Z"
+    description: A Helm chart for chart1
+    digest: 1df83b920e32ba0c762321e9a2ad354c54d760ebc46725ccbb2be78feb61797d
+    name: chart1
+    type: application
+    urls:
+    - https://github.com/dominicroessner/helm-chart-releaser/releases/download/chart1-2.0.27/chart1-2.0.27.tgz
+    version: 2.0.27
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-10-25T18:51:00.616602206Z"
     description: A Helm chart for chart1
     digest: a0eb5a6819cdb855e939b0b5be8385e6c7585ef5c7873200d42e373ba1816d18
@@ -362,4 +372,4 @@ entries:
     urls:
     - chart2-1.0.4.tgz
     version: 1.0.4
-generated: "2023-10-25T18:51:00.616949209Z"
+generated: "2023-11-09T18:25:58.593425103Z"
